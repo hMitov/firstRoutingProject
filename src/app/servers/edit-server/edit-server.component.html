@@ -1,0 +1,18 @@
+<h4 *ngIf="!allowEdit">You are not allowed to edit!</h4>
+<div *ngIf="allowEdit">
+  <div class="row">
+    <div class="col-xs-12-col-sm-4">
+      <div class="container-fluid">
+        <h4>Server Name</h4>
+        <input type="text" [(ngModel)]="serverName">
+        <h4>Server Status</h4>
+        <select class="form-select form-select-lg mb-3" [(ngModel)]="serverStatus">
+          <option selected value="online">Online</option>
+          <option value="offLine">Offline</option>
+          <option value="notInstalled">Not installed</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" (click)="onUpdateServer()">Update Server</button>
+    </div>
+  </div>
+</div>
