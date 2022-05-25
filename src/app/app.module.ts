@@ -17,6 +17,7 @@ import { CanDeactivateGuard } from './servers/edit-server/can-deactivate-guard.s
 import { FormsModule } from '@angular/forms';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { ServerResolver } from './servers/server/server-resolver.service';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ServerResolver } from './servers/server/server-resolver.service';
     ServerComponent,
     EditServerComponent,
     PageNotFoundComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    RecipeStartComponent
   ],
   imports: [
     BrowserModule,
